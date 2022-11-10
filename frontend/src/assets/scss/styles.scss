@@ -1,0 +1,19 @@
+@import "~bootstrap/scss/bootstrap";
+
+
+.cover-img{
+    width: 80%;
+    margin: auto;
+    border-radius: 4px;
+    @media screen and (min-width:960px){
+        width: 60%;
+    }
+}
+.text-center{
+    text-align: center;
+}
+.fullwidth{
+    width: 100%;
+}
+
+
