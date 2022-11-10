@@ -19,16 +19,16 @@ const  Authmiddleware = () => {
   const location = useLocation();
   
   useEffect(() => {
-    if(state.loggedInUser && token)
+    if(state.loggedInUser && token && !state.loading)
     {
       setUser(state.loggedInUser)
     }
-    else if(token)
+    else if(token && !state.loading)
     {
       fetchLoggedInUser(token)
     }
     
-  }, [state.loggedInUser,token,fetchLoggedInUser])
+  }, [state.loggedInUser,token,state.loading,fetchLoggedInUser])
   
   useEffect(()=>{
     if(location.pathname !== state.location)
