@@ -138,10 +138,17 @@ const Registration = ({setTab}) => {
         
       </Box>
       <Stack direction="row" spacing={2}>
-        <Button 
+        {/* <Button 
           variant="contained"
           sx={{ m: 'auto', mt: 3, width: {xs:'70%',md:'50%'} }}
           onClick={performRegistration}
+        >
+          Register
+        </Button> */}
+        <Button 
+          variant="contained"
+          sx={{ m: 'auto', mt: 3, width: {xs:'70%',md:'50%'} }}
+          disabled
         >
           Register
         </Button>

@@ -47,6 +47,7 @@ const Authorization = () => {
                     mr: 2,
                     fontFamily: 'monospace',
                     fontWeight: 700,
+                    fontSize:{xs:'2rem',sm:'3rem'},
                     letterSpacing: '.3rem',
                     color: "#1976d2",
                     textDecoration: 'none',
